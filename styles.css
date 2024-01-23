@@ -1,0 +1,308 @@
+/* sky blue: #78C0E0
+celestial blue: #449DD1
+persian blue: #192BC2
+navy blue: #150578
+federal blue: #0E0E52 */
+
+
+html {
+    font-size: 14px; /* Base font size for small screens */
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    
+    
+      
+}
+
+/* Style for the header */
+header {
+    position: fixed;
+    top: 0;        /* Aligns the header at the top of the viewport */
+    width: 100%;   /* Ensures the header spans the full width */
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    height: 9rem;
+    background-color: #192BC2;
+    
+    /* Add other styles like background-color, padding, etc. */
+}
+
+h1, header p {
+text-align: center;
+padding-top: 1rem;
+margin: 0;
+color: #ffffff;
+
+}
+
+
+
+.header-icon {
+text-align: center;
+margin-top: 1rem;
+}
+
+
+
+.filter-checkbox {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the footer */
+footer {
+    position: fixed;
+    bottom: 0;     /* Aligns the footer at the bottom of the viewport */
+    width: 100%;   /* Ensures the footer spans the full width */
+    z-index: 1000; /* Ensures the footer stays on top of other content */
+    height: 2rem;
+    background-color: #192BC2;
+    padding: 0.5rem;
+    border-top: 3px solid white;
+    margin-top: 20px;
+    /* Add other styles like background-color, padding, etc. */
+}
+
+/* Style for the main content */
+main {
+    margin-top: 5rem;
+    
+}
+
+
+
+/* Style for odd item divs */
+/* Style for odd item divs */
+.main-container .project-card:nth-child(odd) {
+    background-color: white; /* White background for odd items */
+}
+
+.main-container .project-card:nth-child(odd) h2 {
+    color: #192BC2; /* Blue text color for h2 in odd items */
+}
+
+.main-container .project-card:nth-child(odd) a {
+    color: #192BC2; /* Blue color for links in white background */
+    text-decoration: underline dotted;
+    padding: 0 2px;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.main-container .project-card:nth-child(odd) a:hover {
+    text-decoration: none; /* Removes the underline on hover */
+    background-color: #FFDB58; /* Sky blue background on hover */
+    color: #192BC2; /* Optional: change text color on hover for better readability */
+    padding: 0 2px; /* Add some padding to make the background more noticeable */
+}
+
+/* Style for even item divs */
+.main-container .project-card:nth-child(even) {
+    background-color: #192BC2; /* Blue background for even items */
+}
+
+.main-container .project-card:nth-child(even) h2 {
+    color: white; /* White text color for h2 in even items */
+}
+
+.main-container .project-card:nth-child(even) a {
+    color: white; /* White color for links in blue background */
+    text-decoration: underline dotted;
+    
+}
+
+.main-container .project-card:nth-child(even) a:hover {
+    text-decoration: none; /* Removes the underline on hover */
+    background-color: #F08080; /* Light grey background on hover */
+    /* No change in text color needed */
+    padding: 2 2px; /* Add some padding to make the background more noticeable */
+}
+
+/* Common h2 style */
+h2 {
+    font-size: 3rem;
+    
+}
+
+
+
+/* Main container style */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    height: auto;
+    border: 1px solid purple;
+}
+
+/* Project card style */
+.project-card {
+    border: 1px solid #192BC2;
+    margin: 0.5rem;
+    /* padding: 1rem; */
+    text-align: center;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Initial h3 style (hidden) */
+.project-card h3 {
+    display: none;
+    font-size: 1.75rem;
+    color:#150578;
+    margin: 0; /* Adjust margins as needed */
+    padding: 0; /* Adjust padding as needed */
+   
+}
+
+/* Hover effect on project cards */
+.project-card:hover h2 {
+    display: none; /* Hide h2 on hover */
+}
+
+.project-card:hover .project-logo {
+    display: none; /* Hide h2 on hover */
+}
+
+.project-card:hover h3 {
+    display: block; /* Show h3 on hover */
+}
+
+/* Hover style for h3 in odd items */
+.project-card:nth-child(odd):hover h3 {
+    color: #192BC2; /* Blue text color for h3 in odd items */
+}
+
+/* Hover style for h3 in even items */
+.project-card:nth-child(even):hover h3 {
+    color: white; /* White text color for h3 in even items */
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* modal styles: */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.icon {
+    padding: 0.25rem;
+    
+}
+
+/* media queries */
+
+
+/* Mobile (Portrait) */
+@media only screen and (max-width: 479px) {
+    /* CSS rules for mobile portrait view */
+    body {
+        font-size: 12px;
+    }
+    h2, h3 {
+        font-size: 2rem;
+    }
+
+    footer {
+        margin-top: 20px; /* Ensure there's space above the footer */
+    }
+}
+
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for tablet view */
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-gap: 1.25rem; 
+        
+    }
+
+    h2 {
+        font-size: 2.25rem; 
+    }
+
+    .filter-checkbox {
+        
+        margin-top: 1rem;
+        font-size: 2rem;
+        
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    /* CSS rules for desktop view */
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-gap: 1rem; /* Adjust the gap as needed */
+        /* Add other styling as needed */
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    p {
+        font-size: 2rem; 
+    }
+
+    .header-text {
+        margin: 1rem;
+    }
+
+    header {
+        height: 12rem;
+    }
+
+    .filter-checkbox {
+        
+        margin-top: 8rem;
+        font-size: 2.5rem;
+        
+    }
+
+    .project-card {
+        padding: 2rem;
+    }
+}
+
+
