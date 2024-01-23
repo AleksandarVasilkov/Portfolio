@@ -123,7 +123,7 @@ main {
 .main-container .project-card:nth-child(even) a:hover {
     text-decoration: none; 
     background-color: #F08080; 
-    padding: 2 2px; 
+    padding: 0; 
 }
 
 /* Common h2 style */
@@ -140,7 +140,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
+    align-items: stretch;
     
     
 }
