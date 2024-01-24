@@ -7,18 +7,19 @@ federal blue: #0E0E52 */
 
 html {
     font-size: 14px; 
-    
-}
+    }
+
+
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    height: 100vh;
-    
-    
+    height: 100%;
+      
       
 }
+
 
 /* Style for the header */
 header {
@@ -26,11 +27,48 @@ header {
     top: 0;        
     width: 100%;   
     z-index: 1000; 
-    height: 9rem;
+    height: auto;
     background-color: #192BC2;
     
     
 }
+
+.header-nav {
+    text-align: center; /* Center the links */
+    padding: 2px; /* Add some padding */
+    margin-bottom: 10px;
+}
+
+.header-nav a {
+    color: #ffffff; /* Use your theme's color */
+    text-decoration: none; /* No underline for a clean look */
+    margin: 0 10px; /* Space out the links */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.header-nav a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
+
+
+
+/* .section-heading {
+    border: 1px solid #192BC2;
+    margin: 0.5rem;
+    
+    text-align: center;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #192BC2;
+} */
 
 h1, header p {
 text-align: center;
@@ -40,14 +78,10 @@ color: #ffffff;
 
 }
 
-
-
 .header-icon {
 text-align: center;
 margin-top: 1rem;
 }
-
-
 
 .filter-checkbox {
     padding-top: 5rem;
@@ -61,21 +95,25 @@ margin-top: 1rem;
 
 /* Style for the footer */
 footer {
-    position: fixed;
-    bottom: 0;     
-    width: 100%;   
-    z-index: 1000; 
-    height: 2rem;
+    position: relative; /* Change from fixed to relative */
+    width: 100%;
+    z-index: 1000;
+    height: 5rem;
     background-color: #192BC2;
-    padding: 0.5rem;
-    border-top: 3px solid white;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
     
 }
 
+
+
+
 /* Style for the main content */
 main {
-    margin-top: 5rem;
+    margin-top: 7rem;
     
 }
 
@@ -132,7 +170,21 @@ h2 {
     
 }
 
+/* search input */
 
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#searchInput {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Raleway;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
 /* Main container  */
 .main-container {
@@ -203,7 +255,6 @@ h2 {
     flex-direction: row;
     justify-content: center;
     
-    
 }
 
 .icon {
@@ -211,12 +262,71 @@ h2 {
     
 }
 
+.skills {
+    background-color: #f8f8f8; 
+    padding: 10px;
+    text-align: center; 
+}
+
+.skills h2 {
+    color: #192BC2; 
+    margin-bottom: 10px; 
+}
+
+.skills-list ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: inline-block; 
+    text-align: left; 
+}
+
+.skills-list li {
+    color: #333; 
+    padding: 5px 0; 
+    font-size: 16px;
+}
+
+
+.contact-section {
+    background-color: #f8f8f8; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.contact-section h2 {
+    color: #192BC2; 
+    margin-bottom: 10px; 
+}
+
+.ways-to-get-in-touch ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: inline-block; 
+    text-align: left; 
+}
+
+.ways-to-get-in-touch li {
+    color: #333; 
+    padding: 5px 0; 
+    font-size: 16px; 
+}
+
+.ways-to-get-in-touch a {
+    color: #192BC2; 
+    text-decoration: none; 
+}
+
+.ways-to-get-in-touch a:hover {
+    text-decoration: underline; 
+}
+
+
 /* media queries */
 
 
 /* Mobile (Portrait) */
 @media only screen and (max-width: 479px) {
-    /* CSS rules for mobile portrait view */
+    
     body {
         font-size: 12px;
     }
@@ -226,7 +336,6 @@ h2 {
 
     
 }
-
 
 
 /* Tablet */
@@ -274,12 +383,14 @@ h2 {
     }
 
     header {
-        height: 12rem;
+        height: 15rem;
+        
     }
 
+    
     .filter-checkbox {
         
-        margin-top: 8rem;
+        margin-top: 11rem;
         font-size: 2.5rem;
         
     }
