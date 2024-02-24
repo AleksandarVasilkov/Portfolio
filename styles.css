@@ -34,41 +34,23 @@ header {
 }
 
 .header-nav {
-    text-align: center; /* Center the links */
-    padding: 2px; /* Add some padding */
+    text-align: center; 
+    padding: 2px; 
     margin-bottom: 10px;
 }
 
 .header-nav a {
-    color: #ffffff; /* Use your theme's color */
-    text-decoration: none; /* No underline for a clean look */
-    margin: 0 10px; /* Space out the links */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #ffffff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-size: 1.5rem; 
 }
 
 .header-nav a:hover {
-    text-decoration: underline; /* Underline on hover for better user interaction */
+    text-decoration: underline; 
 }
 
 
-
-
-/* .section-heading {
-    border: 1px solid #192BC2;
-    margin: 0.5rem;
-    
-    text-align: center;
-    height: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h4 {
-    font-size: 2rem;
-    color: #192BC2;
-} */
 
 h1, header p {
 text-align: center;
@@ -121,21 +103,25 @@ main {
 
 /* Style for odd item divs */
 
+/* White background for odd items: */
 .main-container .project-card:nth-child(odd) {
-    background-color: white; /* White background for odd items */
-}
+    background-color: white; 
+} 
 
+/* Blue text color for h2 in odd items: */
 .main-container .project-card:nth-child(odd) h2 {
-    color: #192BC2; /* Blue text color for h2 in odd items */
+    color: #192BC2; 
 }
 
+/* Blue color for links in white background: */
 .main-container .project-card:nth-child(odd) a {
-    color: #192BC2; /* Blue color for links in white background */
+    color: #192BC2; 
     text-decoration: underline dotted;
     padding: 0 2px;
     transition: background-color 0.3s, text-decoration 0.3s;
 }
 
+/* hover effect for links in odd items: */
 .main-container .project-card:nth-child(odd) a:hover {
     text-decoration: none; 
     background-color: #FFDB58; 
@@ -144,20 +130,24 @@ main {
 }
 
 /* Style for even item divs */
+
+/* Blue background for even items: */
 .main-container .project-card:nth-child(even) {
-    background-color: #192BC2; /* Blue background for even items */
+    background-color: #192BC2; 
 }
 
+/* White text color for h2 in even items: */
 .main-container .project-card:nth-child(even) h2 {
-    color: white; /* White text color for h2 in even items */
+    color: white; 
 }
 
+/* White color for links in blue background: */
 .main-container .project-card:nth-child(even) a {
-    color: white; /* White color for links in blue background */
+    color: white; 
     text-decoration: underline dotted;
-    
 }
 
+/* hover effect for links in even items: */
 .main-container .project-card:nth-child(even) a:hover {
     text-decoration: none; 
     background-color: #F08080; 
@@ -201,7 +191,6 @@ h2 {
 .project-card {
     border: 1px solid #192BC2;
     margin: 0.5rem;
-    /* padding: 1rem; */
     text-align: center;
     height: 15rem;
     display: flex;
@@ -222,12 +211,14 @@ h2 {
 }
 
 /* Hover effect on project cards */
+
+/* Hide h2 on hover */
 .project-card:hover h2 {
-    display: none; /* Hide h2 on hover */
+    display: none; 
 }
 
 .project-card:hover .project-logo {
-    display: none; /* Hide h2 on hover */
+    display: none; 
 }
 
 .project-card:hover h3 {
@@ -235,20 +226,22 @@ h2 {
 }
 
 /* Hover style for h3 in odd items */
+
+/* Blue text color for h3 in odd items: */
 .project-card:nth-child(odd):hover h3 {
-    color: #192BC2; /* Blue text color for h3 in odd items */
+    color: #192BC2; 
 }
 
 /* Hover style for h3 in even items */
-.project-card:nth-child(even):hover h3 {
-    color: white; /* White text color for h3 in even items */
-}
 
+/* White text color for h3 in even items */
+.project-card:nth-child(even):hover h3 {
+    color: white; 
+}
 
 .hidden {
     display: none;
 }
-
 
 .contact-info {
     display: flex;
